@@ -1,51 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>video playlist</title>
-</head>
-<body>
-    <img src="E:\SMT 3\github\img\x7.jpg" width="600" height="300">
-	<img src="E:\SMT 3\github\img\x6.jpg" width="600" height="300">
-	
+<html lang="en">
+  <head>
+  	<title>Latihan #1 Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
-</body>
-    <figure id="video_player">
-        <video controls width ="700px">
-            <source src="bts.mp4.mp4" type="video/mp4">
-            <source src="video1.webm" type="video/webm">
-        
-        </video>
-        <figcaption>
-            <ul>
-                <li><a href="bts.mp4.mp4"> play video 1</a></li>
-                <li><a href="nice.mp4.mp4"> play video 2</a></li>
-            </ul>
-        </figcaption>
-    </figure>
-</body>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-7 col-lg-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="mx-auto d-block" src="images/bg-1.png">  
+                            </div>
+                        </div>
+                    </div>
+							<form action="#" class="signin-form">
+			      		<div class="form-group mt-3">
+			      			<input type="text" class="form-control" required>
+			      			<label class="form-control-placeholder" for="username">Username</label>
+			      		</div>
+		            <div class="form-group">
+		              <input id="password-field" type="password" class="form-control" required>
+		              <label class="form-control-placeholder" for="password">Password</label>
+		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+		            </div>
+                    
+		            <div class="form-group">
+                        <button type="submit" class="form-control btn btn-primary rounded submit px-3">Log In</button>
+		            </div>
+		          </form>
 
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-<script type="text/javascript">
-    var video_player=document.getElementById("video_player"),
-    links=video_player.getElementByIdTagName('a');
-    for(var i=0; i<links.length; i++){
-        links[i].onclick handler;
-    }
+	</body>
+</html>
 
-    function handler(e){
-        e.preventDefault();
-        videotarget=this.getAttribute("href");
-        filename=videotarget.subbstr(0,videotarget.lastIndexOf('.')||videotarget;
-        video=document.querySelector("#video_player video");
-        video.removeAttribute("poster");
-        source=document.querySelectorAll("#video_player video source");
-        source[0].src=filename + ".mp4";
-        source[1].src=filename + ".webm";
-        vide0.load();
-        video.play()
-
-    }
-
-    </script>
-   </html>
